@@ -1,5 +1,7 @@
 # JointRank: Rank large set with single pass
 
+Repository JointRank implementation, evaluation & experiments.
+
 arXiv preprint: <link will be updated soon!>
 
 ## Project setup
@@ -15,8 +17,6 @@ uv install
 ```
 
 ## Benchmarks
-
-Repository JointRank implementation, evaluation & experiments.
 
 Benchmark evaluation can be run using `jointrank/evaluation/run_bench.py` script.
 Configuration defined by `.yaml` config files. Presets for BEIR and TREC-2019 benchmarks already included and can be run with
