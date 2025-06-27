@@ -50,7 +50,7 @@ uv run python -m jointrank.evaluation.synthetic.coverage -k 10 -r 2 -v 100 -d la
 
 ## Shuffle and rerank top-1000
 
-See `conf/models1000/*.yaml` configs and use them instead of `conf/models/*.yaml` in script `rerank_trec.sh`
+See `conf/top1000shuffle.yaml` and `conf/models1000/*.yaml` configs and use them instead of `conf/base.yaml` and `conf/models/*.yaml` in script `rerank_trec.sh`.
 
 # Citation
 
