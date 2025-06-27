@@ -9,7 +9,7 @@ from jointrank.blocks.comparisons import ComparisonInstance, Verdict
 T = TypeVar("T")
 
 
-# https://github.com/erensezener/rank-centrality MIT License
+# https://github.com/erensezener/rank-centrality Copyright (c) 2018 C. Eren Sezener MIT License
 def extract_rc_scores(comparisons: list[tuple[T, T]], regularized: bool = True) -> dict[T, float]:  # noqa
     """
     Computes the Rank Centrality scores given a list of pairwise comparisons based on Negahban et al 2016 [1].
