@@ -1,0 +1,5 @@
+llm:
+  max_tokens: 100
+ranker:
+  name: topdown
+  block_size: 100  # window size

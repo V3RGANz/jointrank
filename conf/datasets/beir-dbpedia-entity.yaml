@@ -1,0 +1,4 @@
+dataset:
+  dataset: beir/dbpedia-entity
+  run_path: data/run.beir.bm25-flat.dbpedia-entity.txt
+  pyserini_index: beir-v1.0.0-dbpedia-entity

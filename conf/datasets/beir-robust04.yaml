@@ -1,0 +1,4 @@
+dataset:
+  dataset: beir/robust04
+  run_path: data/run.beir.bm25-flat.robust04.txt
+  pyserini_index: beir-v1.0.0-robust04

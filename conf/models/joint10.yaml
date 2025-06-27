@@ -1,0 +1,7 @@
+llm:
+  max_tokens: 10
+ranker:
+  name: joint
+  comparison_inference: simple
+  block_size: 10
+  replicas: 2

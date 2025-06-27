@@ -1,5 +1,19 @@
 # JointRank: Rank large set with single pass
 
+arXiv preprint: <link will be updated soon!>
+
+## Project setup
+
+I use uv for package/project management, so before environment setup, please [install uv](https://github.com/astral-sh/uv?tab=readme-ov-file#installation).
+
+> You can also use any other (your favorite) package manager, in this case, manually install dependencies listed in `pyproject.toml`.
+
+Install requirements with uv:
+
+```shell
+uv install
+```
+
 ## Benchmarks
 
 Repository JointRank implementation, evaluation & experiments.
@@ -12,28 +26,32 @@ prepared scripts.
 
 ```shell
 uv run scripts/prepare_trec.sh  # Downloading BM-25 index and obtaining top-1000
-uv run scripts/rerank_trec.sh   # Rerank
-RUN=path/to/run/file uv run scripts/dl19_eval.sh  # Evaluate
+uv run scripts/rerank_trec.sh   # Rerank top-100
+uv run scripts/eval_dl19.sh     # Evaluate
 ```
 
 ### BEIR eval
 
 ```shell
-uv run scripts/prepare_beir.sh  # Downloading SPLADE++ index and obtaining top-1000
-uv run scripts/rerank_beir.sh   # Rerank
+uv run scripts/prepare_beir.sh  # Downloading BM-25 index and obtaining top-1000
+uv run scripts/rerank_beir.sh   # Rerank top-100
 uv run scripts/eval_beir.sh     # Evaluate
 ```
 
 ## Synthetic experiments
 
 ```shell
+uv run python -m jointrank.evaluation.synthetic.oracle --dst syn/oracle.csv
+```
+
+```shell
 uv run python -m jointrank.evaluation.synthetic.coverage -k 10 -r 2 -v 100 -d latin
 ```
 
-```shell
-uv run python -m jointrank.evaluation.synthetic.connectivity -k 10 -r 2 -v 100 -d equi-replicate
-```
+## Shuffle and rerank top-1000
 
-```shell
-uv run python -m jointrank.evaluation.synthetic.oracle --dst syn/oracle.csv
-```
+See `conf/models1000/*.yaml` configs and use them instead of `conf/models/*.yaml` in script `rerank_trec.sh`
+
+# Citation
+
+BibTeX reference will be updated soon!

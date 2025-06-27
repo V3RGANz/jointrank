@@ -1,0 +1,2 @@
+candidate_pool_size: 100
+shuffle_candidates: false

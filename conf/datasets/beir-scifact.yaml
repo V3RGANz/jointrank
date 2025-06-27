@@ -1,0 +1,5 @@
+dataset:
+  dataset: beir/scifact
+  run_path: data/run.beir.bm25-flat.scifact.txt
+  pyserini_index: beir-v1.0.0-scifact
+

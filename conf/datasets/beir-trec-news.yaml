@@ -1,0 +1,4 @@
+dataset:
+  dataset: beir/trec-news
+  run_path: data/run.beir.bm25-flat.trec-news.txt
+  pyserini_index: beir-v1.0.0-trec-news

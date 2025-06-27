@@ -1,0 +1,4 @@
+dataset:
+  dataset: beir/signal1m
+  run_path: data/run.beir.bm25-flat.signal1m.txt
+  pyserini_index: beir-v1.0.0-signal1m

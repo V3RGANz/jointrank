@@ -1,0 +1,4 @@
+dataset:
+  dataset: beir/webis-touche2020
+  run_path: data/run.beir.bm25-flat.webis-touche2020.txt
+  pyserini_index: beir-v1.0.0-webis-touche2020

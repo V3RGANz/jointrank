@@ -1,0 +1,4 @@
+dataset:
+  dataset: beir/nfcorpus
+  run_path: data/run.beir.bm25-flat.nfcorpus.txt
+  pyserini_index: beir-v1.0.0-nfcorpus

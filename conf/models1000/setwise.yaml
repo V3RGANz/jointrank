@@ -1,0 +1,5 @@
+llm:
+  max_tokens: 100
+ranker:
+  name: setwise
+  block_size: 100  # num_children

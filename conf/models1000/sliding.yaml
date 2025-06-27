@@ -1,0 +1,6 @@
+llm:
+  max_tokens: 100
+ranker:
+  name: sliding
+  block_size: 100  # window size
+  window_step: 90
