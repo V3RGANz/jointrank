@@ -2,7 +2,9 @@
 
 Repository JointRank implementation, evaluation & experiments.
 
-arXiv preprint: <link will be updated soon!>
+arXiv preprint: https://arxiv.org/abs/2506.22262
+
+Version of Record: https://doi.org/10.1145/3731120.3744587 (to be published soon)
 
 ## Project setup
 
@@ -54,4 +56,4 @@ See `conf/top1000shuffle.yaml` and `conf/models1000/*.yaml` configs and use them
 
 # Citation
 
-BibTeX reference will be updated soon!
+BibTeX reference will be specified soon, after official ACM publication.
