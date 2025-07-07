@@ -15,7 +15,7 @@ I use uv for package/project management, so before environment setup, please [in
 Install requirements with uv:
 
 ```shell
-uv install
+uv sync
 ```
 
 ## Benchmarks
