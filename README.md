@@ -2,9 +2,10 @@
 
 Repository JointRank implementation, evaluation & experiments.
 
-arXiv preprint: https://arxiv.org/abs/2506.22262
+Paper (ACM free access): https://doi.org/10.1145/3731120.3744587
 
-Version of Record: https://doi.org/10.1145/3731120.3744587 (to be published soon)
+[arXiv preprint](https://arxiv.org/abs/2506.22262)
+
 
 ## Project setup
 
@@ -56,4 +57,22 @@ See `conf/top1000shuffle.yaml` and `conf/models1000/*.yaml` configs and use them
 
 # Citation
 
-BibTeX reference will be specified soon, after official ACM publication.
+```bib
+@inproceedings{10.1145/3731120.3744587,
+author = {Dedov, Evgeny},
+title = {JointRank: Rank Large Set with Single Pass},
+year = {2025},
+isbn = {9798400718618},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3731120.3744587},
+doi = {10.1145/3731120.3744587},
+abstract = {Efficiently ranking relevant items from large candidate pools is a cornerstone of modern information retrieval systems - such as web search, recommendation, and retrieval-augmented generation. Listwise rerankers, which improve relevance by jointly considering multiple candidates, are often limited in practice: either by model input size constraints, or by degraded quality when processing large sets. We propose a model-agnostic method for fast reranking large sets that exceed a model input limits. The method first partitions candidate items into overlapping blocks, each of which is ranked independently in parallel. Implicit pairwise comparisons are then derived from these local rankings. Finally, these comparisons are aggregated to construct a global ranking using algorithms such as Winrate or PageRank. Experiments on TREC DL-2019 show that our method achieves an nDCG@10 of 70.88 compared to the 57.68 for full-context listwise approach using gpt-4.1-mini as long-context model, while reducing latency from 21 to 8 seconds. The implementation of the algorithm and the experiments is available in the repository: https://github.com/V3RGANz/jointrank},
+booktitle = {Proceedings of the 2025 International ACM SIGIR Conference on Innovative Concepts and Theories in Information Retrieval (ICTIR)},
+pages = {208–217},
+numpages = {10},
+keywords = {block design, large language models for zero-shot ranking},
+location = {Padua, Italy},
+series = {ICTIR '25}
+}
+```
